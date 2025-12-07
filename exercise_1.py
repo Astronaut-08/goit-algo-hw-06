@@ -12,8 +12,8 @@ import matplotlib.pyplot as plt
 
 # Creating
 my_graph = nx.Graph()
-my_graph.add_nodes_from(['A', 'B', 'C', 'D', 'E'])
-my_graph.add_edges_from([('A', 'B'), ('A', 'C'), ('C', 'B'), ('C', 'D'), ('C', 'E'), ('E', 'D')])
+my_graph.add_nodes_from(['A', 'B', 'C', 'D', 'E', 'G'])
+my_graph.add_edges_from([('A', 'B'), ('A', 'C'), ('C', 'B'), ('G', 'D'), ('C', 'E'), ('E', 'D'), ('G', 'E')])
 
 # Visualisation
 visual = nx.spring_layout(my_graph, seed=42)
